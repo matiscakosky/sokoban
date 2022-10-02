@@ -25,7 +25,7 @@ def hay_jugador(grilla, c, f):
     return _hay(grilla, c, f, JUGADOR) or _hay(grilla, c, f, JUGADOR_CON_OBJETIVO)
 
 def juego_ganado(grilla):
-    return CAJA_SUELTA not in [item for sublist in grilla for item in sublist]
+    return CAJA_SUELTA not in [elemento for sublista in grilla for elemento in sublista]
 
 def mover(grilla, direccion):
     copia_grilla = _generar_grilla(grilla)
